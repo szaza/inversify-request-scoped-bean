@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ed5f4bf1-f102-4f84-91c0-d52378f96c6f",
+		"name": "Request Scope Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/some-controller",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "szabo.zoltan",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/some-controller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"some-controller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/some-controller/another-user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "kintzel.levente",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/some-controller/another-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"some-controller",
+						"another-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/some-controller",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "bartha.vivien",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/some-controller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"some-controller"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

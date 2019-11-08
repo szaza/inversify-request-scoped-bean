@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"moduleResolution": "node",
+		"pretty": true,
+		"sourceMap": true,
+		"target": "esnext",
+		"outDir": "./dist",
+		"lib": ["esnext"],
+		"skipLibCheck": true,
+		"plugins": [{ "name": "typescript-tslint-plugin" }]
+	},
+	"types": ["reflect-metadata", "jest"],
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules"]
+}
